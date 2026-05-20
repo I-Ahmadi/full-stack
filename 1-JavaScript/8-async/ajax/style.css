@@ -1,0 +1,83 @@
+/* Reset + base */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 420px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Input + Button */
+input {
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Result layout */
+#result {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Main card */
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fafafa;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/* 🔥 Smaller neighbor card */
+.card.neighbor {
+  width: 180px;
+  font-size: 13px;
+  opacity: 0.8;
+  transform: scale(0.9);
+  border: 2px dashed #ccc;
+}
+
+.card.neighbor img {
+  width: 60px;
+}
