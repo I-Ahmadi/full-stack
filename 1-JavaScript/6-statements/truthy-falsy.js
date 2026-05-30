@@ -52,7 +52,7 @@ let height; // false
 // let height = 123; // true
 // let height = 0; // false
 if (height) {
-    console.log('YAH! Height is defined');
+  console.log('YAH! Height is defined');
 } else {
-    console.log('Height is UNDEFINED');
+  console.log('Height is UNDEFINED');
 }

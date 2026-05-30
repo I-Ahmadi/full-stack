@@ -1,4 +1,4 @@
-// ===================== this-keyword.js =====================
+// ===================== this-keyword =====================
 
 // 'this' Keyword:
 // Refers to the object that is calling the function.

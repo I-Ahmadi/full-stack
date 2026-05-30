@@ -11,10 +11,10 @@ const age1 = 19;
 
 // if (isOldEnought) {
 if (age1 >= 18) {
-    console.log('Sarah can start driving license!');
+  console.log('Sarah can start driving license!');
 } else {
     const yearsLeft = 18 - age1;
-    console.log(`Sara is too young. Wait another ${yearsLeft} years :)`);
+  console.log(`Sara is too young. Wait another ${yearsLeft} years :)`);
 }
 
 const birthYear = 2012;
