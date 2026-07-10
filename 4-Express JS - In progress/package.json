@@ -1,0 +1,20 @@
+{
+  "name": "express-js-in-progress-lessons",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Express.js lessons organized by topic.",
+  "main": "9-rest-api/app.js",
+  "private": true,
+  "scripts": {
+    "start": "node 9-rest-api/app.js",
+    "fundamentals": "node 1-fundamentals/express-basics.js",
+    "routing": "node 2-routing/route-basics.js",
+    "middleware": "node 3-middleware/custom-middleware.js",
+    "mvc": "node 5-controllers-mvc/mvc-structure.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
