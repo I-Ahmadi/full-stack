@@ -1,3 +1,4 @@
+// Export a named class
 // class Calculator {
 //   add(a, b) {
 //     return a + b;
@@ -12,6 +13,11 @@
 //   }
 // }
 
+// module.exports = Calculator;
+
+// ------------------------
+
+// Export an anonymous class
 module.exports = class {
   add(a, b) {
     return a + b;

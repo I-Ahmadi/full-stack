@@ -41,7 +41,6 @@ const __name = "Ismail Ahmadi";
 */
 
 /*
-
 When to Use var, let, or const:
 
 1. Always declare variables
@@ -49,5 +48,4 @@ When to Use var, let, or const:
 3. Always use const if the type should not be changed (Arrays and Objects)
 4. Only use let if you cannot use const
 5. Never use var if you can use let or const.
-
 */

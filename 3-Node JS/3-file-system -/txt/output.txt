@@ -1,0 +1,5 @@
+SYNC OUTPUT
+The avocado is popular in vegetarian cuisine because it has a rich texture and healthy fats.
+
+Created with fs.readFileSync and fs.writeFileSync.
+Appended with fs.appendFileSync.

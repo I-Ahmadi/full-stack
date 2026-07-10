@@ -1,14 +1,15 @@
 {
-  "name": "3-asynchronous-js",
+  "name": "node-async-promises-lesson",
   "version": "1.0.0",
-  "description": "",
+  "description": "Beginner lessons for callbacks, promises, async/await, and Promise.all.",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "callbacks": "node callbacks-promises.js",
+    "await": "node async-await.js",
+    "test": "node index.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "superagent": "^5.0.2"
-  }
+  "license": "ISC"
 }

@@ -1,0 +1,23 @@
+{
+  "name": "node-npm-packages-lesson",
+  "version": "1.0.0",
+  "description": "Beginner lessons for npm, package.json, package management, and npm scripts.",
+  "main": "packages-mgt.js",
+  "private": true,
+  "scripts": {
+    "start": "node packages-mgt.js",
+    "packages": "node packages-mgt.js",
+    "lesson": "node package-json.js",
+    "scripts": "node npm-scripts.js",
+    "dev": "node npm-scripts.js",
+    "test": "node -e \"console.log('No tests yet - this is a lesson folder')\""
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "package-json",
+    "scripts"
+  ],
+  "author": "",
+  "license": "ISC"
+}
