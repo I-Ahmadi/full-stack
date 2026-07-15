@@ -58,3 +58,19 @@ shopEvents.emit("error", new Error("Payment provider is temporarily down"));
   emitter.emit(eventName, data)      -> trigger event
   emitter.off(eventName, listener)   -> remove listener
 */
+
+// Chat App Example
+const EventEmitter = require("events");
+
+// Create a chat room
+class ChatRoom extends EventEmitter {}
+const chat = new ChatRoom();
+
+// Listen for the "message" event
+chat.on("message", ({ user, text }) => {
+  console.log(`${user}: ${text}`);
+});
+
+// Users send messages
+chat.emit("message", { user: "Ali", text: "Hi Ismail!" });
+chat.emit("message", { user: "Sara", text: "Welcome!" });

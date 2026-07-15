@@ -95,6 +95,9 @@ const users = [
 
 // Second Step
 const server = http.createServer((req, res) => {
+  console.log('Request object: ', req);
+  console.log('Response object: ', res);
+
   if (req.method === 'GET' && req.url === '/') { 
     res.writeHead(200, {
       "content-type": "text/plain"
