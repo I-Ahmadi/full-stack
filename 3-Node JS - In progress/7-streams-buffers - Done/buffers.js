@@ -10,7 +10,7 @@
   encrypted data.
 */
 
-const text = "Hello Node";
+const text   = "Hello Node";
 const buffer = Buffer.from(text, "utf8");
 
 console.log("Original text:", text);

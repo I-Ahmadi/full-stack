@@ -8,10 +8,10 @@
   Streams process data in chunks instead of loading everything into memory.
 */
 
-const fs = require("fs");
+const fs   = require("fs");
 const path = require("path");
 
-const inputPath = path.join(__dirname, "test-file.txt");
+const inputPath  = path.join(__dirname, "test-file.txt");
 const outputPath = path.join(__dirname, "stream-output-preview.txt");
 
 const readable = fs.createReadStream(inputPath, {

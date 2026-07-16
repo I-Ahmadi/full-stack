@@ -8,7 +8,7 @@
   This example compares reading a large file all at once vs using a stream.
 */
 
-const fs = require("fs");
+const fs   = require("fs");
 const path = require("path");
 
 const filePath = path.join(__dirname, "test-file.txt");

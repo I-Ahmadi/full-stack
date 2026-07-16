@@ -9,11 +9,11 @@
   A Promise is an object representing a future success or failure.
 */
 
-const fs = require("fs");
+const fs         = require("fs");
 const fsPromises = require("fs/promises");
-const path = require("path");
+const path       = require("path");
 
-const dogPath = path.join(__dirname, "dog.txt");
+const dogPath    = path.join(__dirname, "dog.txt");
 const outputPath = path.join(__dirname, "dog-img.txt");
 
 /*
