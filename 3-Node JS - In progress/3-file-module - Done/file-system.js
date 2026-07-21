@@ -28,11 +28,11 @@
 
 const fs = require("fs"); // CommonJS
 // import fs from "fs"; // ES modules
-// import { readFile, writeFile } from "fs/promises"; // ES modules with named imports
+import { readFile, writeFile } from "fs/promises"; // ES modules with named imports
 
 // Promise-based API
-// Node.js provides promise-based versions of the File System API in the fs/promises namespace, which is 
-// recommended for modern applications:
+// Node.js provides promise-based versions of the File System API in the fs/promises namespace, 
+// which is recommended for modern applications:
 
 // Using promises (Node.js 10.0.0+)
 const fs = require('fs').promises;
@@ -41,7 +41,7 @@ const fs = require('fs').promises;
 const { readFile, writeFile } = require('fs').promises;
 
 // Or with ES modules
-// import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 
 /*
   Callback-based async file methods
@@ -169,7 +169,7 @@ async function deleteFile() {
 
 deleteFile();
 
-// Deleting Multiple Files
+// 4. Deleting Multiple Files
 // To delete multiple files, you can use Promise.all() with fs.unlink():
 const path = require('path');
 
@@ -199,7 +199,7 @@ async function deleteFiles() {
 
 deleteFiles();
 
-// Renaming and Moving Files
+// 5. Renaming and Moving Files
 // The fs.rename() method can be used for both renaming and moving files.
 
 // It's a versatile method for file system operations that involve changing file paths.
@@ -246,12 +246,12 @@ renameFile();
 // You can use fs.rename() to move files between directories:
 
 // Example: Moving a file to a different directory
-const fs = require('fs').promises;
+const fs   = require('fs').promises;
 const path = require('path');
 
 async function moveFile() {
   const sourceFile = 'source/file.txt';
-  const targetDir = 'destination';
+  const targetDir  = 'destination';
   const targetFile = path.join(targetDir, 'file.txt');
 
   try {
