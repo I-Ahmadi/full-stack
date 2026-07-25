@@ -1,4 +1,0 @@
-PROMISE OUTPUT
-The avocado is also used as the base for guacamole and as a spread on toast.
-
-Created with fs/promises and .then().

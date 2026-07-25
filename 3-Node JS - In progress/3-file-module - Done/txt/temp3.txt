@@ -1,0 +1,1 @@
+Temporary file 3 used by the multiple-file deletion example.

@@ -1,0 +1,1 @@
+This file is moved into the destination directory by the move example.

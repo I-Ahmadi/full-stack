@@ -57,7 +57,7 @@ import { readFile, writeFile } from 'fs/promises';
 
 const fs = require('fs');
 
-fs.readFile('myfile.txt', 'utf-8', (err, data) => {
+fs.readFile('txt/myfile.txt', 'utf-8', (err, data) => {
   if (err) {
     console.error('Error reading file: ', err);
     return;
@@ -83,7 +83,7 @@ const fs = require('fs').promises;
 
 async function readFileAsync() {
   try {
-    const data = await fs.readFile('myfile.txt', 'utf-8');
+    const data = await fs.readFile('txt/myfile.txt', 'utf-8');
     console.log('File contents: ', data);
   } catch(err) {
     console.error('Error reading file: ', err.message);
@@ -118,7 +118,7 @@ const fs = require('fs').promises;
 // 1. Using fs.writeFile()
 async function writeToFileAsync() {
   try {
-    await fs.writeFile('myfile.txt', 'Hello, Node.JS!', 'utf-8');
+    await fs.writeFile('txt/myfile.txt', 'Hello, Node.JS!', 'utf-8');
 
     // Write JSON data
     const data = { name: 'John', age: 30, city: 'New York' };
@@ -150,7 +150,7 @@ appendToFileAsync();
 // Use fs.unlink() to delete a file:
 
 async function deleteFile() {
-  const filePath = __dirname + 'myfile.txt';
+  const filePath = __dirname + '/txt/myfile.txt';
   try {
     // Check if file exists
     await fs.access(filePath);
@@ -175,9 +175,9 @@ const path = require('path');
 
 async function deleteFiles() {
   const filesToDelete = [
-    'temp1.txt',
-    'temp2.txt',
-    'temp3.txt'
+    'txt/temp1.txt',
+    'txt/temp2.txt',
+    'txt/temp3.txt'
   ];
 
   try {
@@ -211,8 +211,8 @@ deleteFiles();
 const fs = require('fs').promises;
 
 async function renameFile() {
-  const oldPath = 'old-name.txt';
-  const newPath = 'new-name.txt';
+  const oldPath = 'txt/old-name.txt';
+  const newPath = 'txt/new-name.txt';
 
   try {
     // Check if source file exists
@@ -250,8 +250,8 @@ const fs   = require('fs').promises;
 const path = require('path');
 
 async function moveFile() {
-  const sourceFile = 'source/file.txt';
-  const targetDir  = 'destination';
+  const sourceFile = 'txt/source/file.txt';
+  const targetDir  = 'txt/destination';
   const targetFile = path.join(targetDir, 'file.txt');
 
   try {

@@ -1,0 +1,3 @@
+Hello from myfile.txt!
+
+This sample text is used by the callback and promise-based read examples.
